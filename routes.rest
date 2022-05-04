@@ -9,7 +9,7 @@ GET http://localhost:8080/recipes/61a921f6028954d4f0319e6e
 GET http://localhost:8080/recipes/61a921f6028954d4f0319e6f
 
 
-### Create contact 
+### Create recipe 
 POST http://localhost:8080/recipes HTTP/1.1 
 content-type: application/json
 
@@ -20,14 +20,14 @@ content-type: application/json
 
 
 
-### PUT contact which means update
+### PUT recipe which means update
 PUT http://localhost:8080/recipes/61a921f6028954d4f0319e6f HTTP/1.1 
 content-type: application/json
 
 {
 "recipeCategory":"Dessert", "recipeContributer":"Carla", "recipeName":"Chocolate Cookies", "recipeURL":"bestcookiesever.com"
 } 
-### DELETE contact 
+### DELETE recipe 
 DELETE http://localhost:8080/recipes/61a921f6028954d4f0319e6f HTTP/1.1
 
 //**************************HEROKU**************************************
@@ -36,19 +36,19 @@ DELETE http://localhost:8080/recipes/61a921f6028954d4f0319e6f HTTP/1.1
 
 //Production Deploy
 ###
-Get https://cse341mandychadwick-1-2.herokuapp.com/recipes
+Get https://recipe-app-mandy.herokuapp.com/recipes
 ###
-Get https://cse341mandychadwick-1-2.herokuapp.com/recipes/61a921f6028954d4f0319e6d
+Get https://recipe-app-mandy.herokuapp.com/recipes/61a921f6028954d4f0319e6d
 ###
 
-Get https://cse341mandychadwick-1-2.herokuapp.com/recipes/61a921f6028954d4f0319e6e
+Get https://recipe-app-mandy.herokuapp.com/recipes/61a921f6028954d4f0319e6e
 ###
-Get https://cse341mandychadwick-1-2.herokuapp.com/recipes/61a921f6028954d4f0319e6f
+Get https://recipe-app-mandy.herokuapp.com/recipes/61a921f6028954d4f0319e6f
 ###
 
 
 ### Create contact 
-POST https://cse341mandychadwick-1-2.herokuapp.com/contacts HTTP/1.1 
+POST https://recipe-app-mandy.herokuapp.com/recipes HTTP/1.1 
 content-type: application/json
 
 {
@@ -56,7 +56,7 @@ content-type: application/json
 }
 
 ### PUT 
-contact PUT https://cse341mandychadwick-1-2.herokuapp.com/contacts/6262ea4c5cff8c45abd85170 HTTP/1.1 
+contact PUT https://recipe-app-mandy.herokuapp.com/recipes/61a921f6028954d4f0319e6f HTTP/1.1 
 content-type: application/json
 
 {
@@ -64,17 +64,8 @@ content-type: application/json
 }
 
 ### DELETE contact 
-DELETE https://cse341mandychadwick-1-2.herokuapp.com/contacts/6262ea4c5cff8c45abd85170 HTTP/1.1
+DELETE https://recipe-app-mandy.herokuapp.com/recipes/61a921f6028954d4f0319e6f HTTP/1.1
 
 
 
 
-
-recipeCategory
-"American Food"
-recipeContributer
-"Kyle Star"
-recipeName
-"Hamberger Pie"
-recipeURL
-"www.verygoodfood.com"
