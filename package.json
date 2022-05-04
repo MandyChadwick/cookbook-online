@@ -1,0 +1,26 @@
+{
+  "name": "cookbook-online",
+  "version": "1.0.0",
+  "description": "for cookbook",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MandyChadwick/cookbook-online.git"
+  },
+  "author": "Mandy Chadwick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MandyChadwick/cookbook-online/issues"
+  },
+  "homepage": "https://github.com/MandyChadwick/cookbook-online#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "mongodb": "^4.5.0"
+  }
+}

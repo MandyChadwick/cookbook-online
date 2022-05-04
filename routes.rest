@@ -1,0 +1,80 @@
+// LOCALHOST
+###
+GET http://localhost:8080/recipes
+###
+GET http://localhost:8080/recipes/61a921f6028954d4f0319e6d
+###
+GET http://localhost:8080/recipes/61a921f6028954d4f0319e6e
+###
+GET http://localhost:8080/recipes/61a921f6028954d4f0319e6f
+
+
+### Create contact 
+POST http://localhost:8080/recipes HTTP/1.1 
+content-type: application/json
+
+{
+"recipeCategory":"Pasta", "recipeContributer":"Darrell Smith", "recipeName": "Chocolate Cake", "recipeURL":"cookingwithdarrell.com"
+}
+
+
+
+
+### PUT contact which means update
+PUT http://localhost:8080/recipes/61a921f6028954d4f0319e6f HTTP/1.1 
+content-type: application/json
+
+{
+"recipeCategory":"Dessert", "recipeContributer":"Carla", "recipeName":"Chocolate Cookies", "recipeURL":"bestcookiesever.com"
+} 
+### DELETE contact 
+DELETE http://localhost:8080/recipes/61a921f6028954d4f0319e6f HTTP/1.1
+
+//**************************HEROKU**************************************
+
+// PRODUCTION Deploy 
+
+//Production Deploy
+###
+Get https://cse341mandychadwick-1-2.herokuapp.com/recipes
+###
+Get https://cse341mandychadwick-1-2.herokuapp.com/recipes/61a921f6028954d4f0319e6d
+###
+
+Get https://cse341mandychadwick-1-2.herokuapp.com/recipes/61a921f6028954d4f0319e6e
+###
+Get https://cse341mandychadwick-1-2.herokuapp.com/recipes/61a921f6028954d4f0319e6f
+###
+
+
+### Create contact 
+POST https://cse341mandychadwick-1-2.herokuapp.com/contacts HTTP/1.1 
+content-type: application/json
+
+{
+"recipeCategory":"Bailey", "recipeContributer":"Wendler", "recipeName":"bwendler@test.com", "recipeURL":"Red"
+}
+
+### PUT 
+contact PUT https://cse341mandychadwick-1-2.herokuapp.com/contacts/6262ea4c5cff8c45abd85170 HTTP/1.1 
+content-type: application/json
+
+{
+"recipeCategory":"Sandra", "recipeContributer":"Fox", "recipeName":"sfox@gmail.com", "recipeURL":"Gold"
+}
+
+### DELETE contact 
+DELETE https://cse341mandychadwick-1-2.herokuapp.com/contacts/6262ea4c5cff8c45abd85170 HTTP/1.1
+
+
+
+
+
+recipeCategory
+"American Food"
+recipeContributer
+"Kyle Star"
+recipeName
+"Hamberger Pie"
+recipeURL
+"www.verygoodfood.com"
