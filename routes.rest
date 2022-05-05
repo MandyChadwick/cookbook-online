@@ -66,6 +66,77 @@ content-type: application/json
 ### DELETE contact 
 DELETE https://recipe-app-mandy.herokuapp.com/recipes/61a921f6028954d4f0319e6f HTTP/1.1
 
+// //////////////////////////for users/////////////////////////////////////////////////////////
+// LOCALHOST
+###
+GET http://localhost:8080/users
+###
+GET http://localhost:8080/users/61a921f6028954d4f0319e7d
+###
+GET http://localhost:8080/users/61a921f6028954d4f0319e8d
+###
+GET http://localhost:8080/users/61a921f6028954d4f0319e9d
+
+
+### Create user
+POST http://localhost:8080/users HTTP/1.1 
+content-type: application/json
+
+{
+"firstName":"Dallas", "lastName":"Seavy", "email": "chocolatecake@gmail.com", "streetAddress":"933 summers lane", "zipCode":"99504", "birthday":"11/22/66", "favoriteFood": "manna"
+}
+
+
+
+
+### PUT user which means update
+PUT http://localhost:8080/users/61a921f6028954d4f0319e6f HTTP/1.1 
+content-type: application/json
+
+{
+"firstName":"Bart", "lastName":"Moss", "email": "bmoss@gmail.com", "streetAddress":"777 summers lane", "zipCode":"79504", "birthday":"11/21/60", "favoriteFood": "soup"
+}
+
+### DELETE user
+DELETE http://localhost:8080/users/61a921f6028954d4f0319e6f HTTP/1.1
+
+//**************************HEROKU**************************************
+
+// PRODUCTION Deploy 
+
+//Production Deploy
+###
+Get https://user-app-mandy.herokuapp.com/users
+###
+Get https://user-app-mandy.herokuapp.com/users/61a921f6028954d4f0319e7d
+###
+
+Get https://user-app-mandy.herokuapp.com/users/61a921f6028954d4f0319e8d
+###
+Get https://user-app-mandy.herokuapp.com/users/61a921f6028954d4f0319e9d
+###
+
+
+### Create user 
+POST https://user-app-mandy.herokuapp.com/users HTTP/1.1 
+content-type: application/json
+
+{
+"firstName":"Porter", "lastName":"Fox", "email": "pfox@gmail.com", "streetAddress":"6729 Willowa", "zipCode":"89504", "birthday":"11/22/66", "favoriteFood": "candy"
+}
+
+
+
+### PUT 
+contact PUT https://user-app-mandy.herokuapp.com/users/61a921f6028954d4f0319e7d HTTP/1.1 
+content-type: application/json
+
+{
+"firstName":"Mike", "lastName":"Walter", "email": "mwalter@gmail.com", "streetAddress":"951 summers lane", "zipCode":"88504", "birthday":"07/02/64", "favoriteFood": "cake"
+}
+
+### DELETE user 
+DELETE https://user-app-mandy.herokuapp.com/users/61a921f6028954d4f0319e7d HTTP/1.1
 
 
 
